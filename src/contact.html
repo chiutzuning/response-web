@@ -71,32 +71,37 @@
    </div>
    <!-- ========================= main section ================================= -->
    <section class="main">
-      <div class="title-container text-center">
+      <div class="title-container text-center mb-3">
         <h1>CONTACT US</h1>
       </div>
       <div class="container">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">First name</label>
-          <input type="text" class="form-control" id="firstNmae">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">last name</label>
-          <input type="text" class="form-control" id="lastNmae">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="3"></textarea>
-        </div>
-        <button type="submit" class="btn btn-dark btn-medium">Submit</button>
-      </div>
-      <div id="status" class="text-center mt-3">Success</div>
+        <!-- connect with formspree-->
+        <form action="https://formspree.io/f/meqnzlwd" method="POST" id="my-form">
+          <div class="mb-3">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" required>
+          </div>
+          <div class="mb-3">
+            <label for="lastName" class="form-label">last name</label>
+            <input type="text" class="form-control" id="lastName" name="lirstName" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea name="message" class="form-control" id="message" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark btn-medium">Submit</button>
+          </div>
+        </form>
+      <div id="status"></div>
    </section>
    <!-- =============XXXX========== main section =================XXXXX============ -->
   </header>
+  <!--connect to email-->
+  <script src="/js/contact.js"></script>
   <!--Jquery file-->
   <script src="/js/jquery.3.6.js"></script>
   <!--Custom Javascript file-->

@@ -4,11 +4,16 @@
   padding: 30px 40px;
 }
 
+.main .title-container{
+  font-family: 'Abril Fatface';
+  font-size: 2.5rem;
+}
+
 
 .main {
   padding-top: 30px;
   width: 100%;
-  height: 650px;
+  height: 700px;
   background: url("/assets/profile/background/back1.jpg") no-repeat 2% 2%;
   background-size: cover;
   flex-direction: column;
@@ -24,4 +29,39 @@
 .btn-medium:hover {
   background: transparent;
   color: black;
+}
+
+#status{
+  /* max-width: 500px; */
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+  width: 60%;
+}
+
+#status.success{
+  background-color: rgb(211, 250, 153);
+  animation: status 4s ease delay forwards;
+}
+
+#status.error{
+  background-color: rgb(250, 129, 92);
+  color: white;
+  animation: status 4s ease delay forwards;
+}
+
+@keyframes status{
+  0%{
+    opacity: 1;
+    position-event: all;
+  }
+  90%{
+    opacity: 1;
+    position-event: all;
+  }
+  100%{
+    opacity: 0;
+    position-event: all;
+  }
 }
