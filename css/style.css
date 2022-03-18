@@ -61,6 +61,32 @@ body {
   font-size: 2.5rem;
 }
 
+.name-animation{
+  font-size: 90px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 2s steps(10) infinite alternate,
+    blink 800ms steps(10) infinite normal;
+  border-right: 5px solid black;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+@keyframes blink {
+  from {
+    border-color: black;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
 .site-title h3{
   font-family: 'Abril Fatface';
   font-size: 1.5rem;
@@ -180,6 +206,18 @@ body {
   background-color: whitesmoke;
   color:rgb(43, 40, 40);
   border-radius: 8px;
+  font-family: 'Abril Fatface';
+  border-color: seashell;
+}
+
+.btn-primary:hover{
+  background:rgb(43, 40, 40);
+  color:rgb(255, 255, 255);
+  border-color: seashell;
+}
+
+.list-space{
+  margin-top: 100px;
 }
 
 /* project */
@@ -408,5 +446,15 @@ body {
     height: 700px;
     background: url("/assets/profile/background/banner2-under1130.png") no-repeat 2% 2% !important;
     background-size: cover;
+  }
+}
+
+/* less than or equal to 750px */
+@media only screen and (max-width: 750px){
+  .skills-group{
+    /* display: grid;
+    grid-template-columns: auto !important;
+    grid-template-rows: auto !important;
+    grid-gap: 3px; */
   }
 }
