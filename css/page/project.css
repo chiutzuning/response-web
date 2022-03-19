@@ -1,0 +1,67 @@
+.project-area h1{
+  font-family: 'Abril Fatface';
+  font-size: 2.5rem;
+}
+
+/* problem-area */
+.problem .row{
+  
+}
+
+/* main-role */
+
+.main-role{
+  margin-top: 100px;
+  background-color: #333;
+}
+
+.main-role .left-container{
+  padding: 30px 40px;
+  color: whitesmoke;
+  text-align: center;
+  margin-right: 0px;
+  margin-left: 0px;
+  height: 100%;
+}
+
+.main-role .right-container{
+  padding-left: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.main-role .right-container img{
+  margin: 30px;
+}
+
+/* footer */
+
+.footer-container > div{
+  flex-grow: 1;
+  flex-basis: 0;
+  padding: 30px;
+ }
+
+ .footer {
+   background: #F4F4F4;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 100px;
+   padding: 0px 50px;
+   color: rgba(0,0,0,0.3);
+ }
+ .footer-links {
+   display: flex;
+   align-items: center;
+ }
+ .footer-links a {
+   color: black;
+   opacity: 0.15;
+   text-decoration: none;
+   font-size: 24px;
+   padding: 0px 10px;
+ }
+ .footer-links a:hover {
+   opacity: 1;
+ }

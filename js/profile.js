@@ -17,4 +17,14 @@ $(document).ready(function(){
 
   //animation AOS
   AOS.init();
+
+  //skills bar
+  $('.skill-per').each(function() {
+    var $this = $(this);
+    var per = $this.attr('per');
+    $this.css("width", per + '%');
+    $({ animateValue: 0}).animate({ animateValue: per}, {
+      duration: 1000
+    });
+  });
 });
