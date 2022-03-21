@@ -204,6 +204,7 @@ body {
   border-radius: 8px;
   font-family: 'Abril Fatface';
   border-color: seashell;
+  font-size: 1.7rem;
 }
 
 .btn-primary:hover{
@@ -215,6 +216,64 @@ body {
 .list-space{
   margin-top: 100px;
 }
+
+.mfp-hide{
+  display: none !important;
+}
+
+.button-play-video{
+  color:rgb(43, 40, 40);
+  background-color: whitesmoke;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-family: 'Abril Fatface';
+  font-size: 1.7rem;
+  font-weight:bold;
+  margin-top:40px;
+  display: inline-block;
+}
+
+.button-play-video:hover{
+  border: 2px solid white;
+  color:rgb(255, 255, 255);
+  background-color: transparent;
+  padding: 20px 35px;
+  border-radius: 8px;
+  font-size: 1.7rem;
+  font-weight:bold;
+  margin-top:40px;
+  display: inline-block;
+}
+
+.button-container a{
+  text-decoration: none;
+}
+
+.popup .popuptext {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+  }
+  .popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+  }
+  @-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  }
+  @keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+  }
 
 /* project */
 .site-main .project-area {
