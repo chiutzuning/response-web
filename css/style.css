@@ -163,6 +163,13 @@ body {
   color: whitesmoke;
 }
 
+.side-project-title .title-text{
+  padding-top: 20px;
+  font-family: 'Abril Fatface';
+  font-size: 2.5rem;
+  color: whitesmoke;
+}
+
 .side-projects-title h3{
   padding-top: 5px;
   font-size: 1.5rem;
@@ -587,14 +594,62 @@ body {
     background: url("/assets/profile/background/banner2-under1130.png") no-repeat 2% 2% !important;
     background-size: cover;
   }
+
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 40%;
+    }
+  }
 }
 
 /* less than or equal to 750px */
 @media only screen and (max-width: 750px){
+  .site-banner{
+    height: auto;
+  }
+  .site-banner .justify-left{
+    padding-left: 20px;
+    margin-top: 20px;
+  }
+
+  .name-animation {
+    font-size: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(10) infinite alternate, blink 800ms steps(10) infinite normal;
+    border-right: 5px solid black;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 80%;
+    }
+  }
+
+  .side-project-list img{
+    width: 350px;
+    height: 100%;
+  }
+
+  .side-project-title h3{
+    padding-top: 5px;
+    font-size: 1rem;
+    color: #b2cdec;
+  }
+
   .skills-group{
-    /* display: grid;
-    grid-template-columns: auto !important;
-    grid-template-rows: auto !important;
-    grid-gap: 3px; */
+    grid-template-columns: auto auto auto;
+    grid-gap: 1px;
+    padding: 2px;
+  }
+
+  .skill-element a{
+    font-size: 2px;
   }
 }
