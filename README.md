@@ -2,9 +2,6 @@
 
 create response website with HTML/CSS/Javascript
 
-<h1 align="center">Hi 👋, I'm Tzuning Chiu(Genie)</h1>
-<h3 align="center">A passionate full-stack developer from Netherlands </h3>
-
 - 💼 here is my portfolio [Genie's porfolio](http://genie-portfolio.herokuapp.com/src/)
 
 # Video of response web
